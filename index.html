@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Profile Card</title>
+
+    <!-- Add Tailwind CSS via the CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div id="card-container" class="flex justify-center items-center content-center h-[100vh] min-h-[200px]">
+
+        <div id="profile-card" class="bg-sky-300 w-[70vw] p-[1em] rounded-2xl">
+
+            <div id="profile-name-picture-container" class="flex justify-center items-center content-center flex-wrap">
+                <div id="profile-picture-container" class="size-[6rem] rounded-full bg-white overflow-hidden border-3 border-black flex justify-center items-center content-center">
+                    <img id="profile-picture" class="w-[70%]" src="./images/LuigiProfilePicture.webp" alt="Luigi Mario's Profile Picture">
+                </div>
+                <div id="name-titile-container" class="h-auto flex-1 text-[3em] max-[600px]:text-[2.5em]">
+                    <!-- Luigi's actual last name is Mario, that's why they're the Mario Brothers -->
+                    <h1 id="profile-name" class="h-auto text-center text-[1em]">Luigi Mario</h1>
+                    <h2 id="profile-title" class="text-center h-auto text-[0.33em]">Okey dokey</h2>
+                </div>
+                <p id="profile-bio" class="w-auto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolorem nostrum numquam velit quae incidunt mollitia assumenda dolores ratione alias est veniam, quam nemo enim non laudantium eos fugiat blanditiis?</p>
+            </div>
+            <div id="button-container" class="flex justify-end">
+                <!-- Add js to make button work later -->
+                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black" onclick="luigiNoises()"> Click Me! </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function luigiNoises(){
+
+        }
+    </script>
+    
+</body>
+</html>
