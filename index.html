@@ -7,12 +7,14 @@
 
     <!-- Add Tailwind CSS via the CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Link to use font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <div id="card-container" class="flex justify-center items-center content-center h-[100vh] min-h-[200px]">
+    <div id="card-container" class="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-4 items-center md:h-[100vh] min-h-[200px] p-[1em]">
 
-        <div id="profile-card" class="bg-sky-300 w-[70vw] p-[1em] rounded-2xl">
-
+        <div id="profile-card" class="bg-sky-300 p-[1em] rounded-2xl h-fit">
             <div id="profile-name-picture-container" class="flex justify-center items-center content-center flex-wrap">
                 <div id="profile-picture-container" class="size-[6rem] rounded-full bg-white overflow-hidden border-3 border-black flex justify-center items-center content-center">
                     <img id="profile-picture" class="w-[70%]" src="./images/LuigiProfilePicture.webp" alt="Luigi Mario's Profile Picture">
@@ -24,18 +26,94 @@
                 </div>
                 <p id="profile-bio" class="w-auto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolorem nostrum numquam velit quae incidunt mollitia assumenda dolores ratione alias est veniam, quam nemo enim non laudantium eos fugiat blanditiis?</p>
             </div>
-            <div id="button-container" class="flex justify-end">
-                <!-- Add js to make button work later -->
-                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black" onclick="luigiNoises()"> Click Me! </button>
-            </div>
+            <div id="buttons-container" class="flex justify-between">
+                <div>
+                    <a href="#"> <i class="fa-brands fa-twitter text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-facebook-square text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-github text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-instagram text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                </div>
 
+                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black" onclick="spinTime()"> Spin!!!! </button>
+            </div>
+        </div>
+
+        <div id="profile-card" class="bg-sky-300 p-[1em] rounded-2xl h-fit">
+            <div id="profile-name-picture-container" class="flex justify-center items-center content-center flex-wrap">
+                <div id="profile-picture-container" class="size-[6rem] rounded-full bg-white overflow-hidden border-3 border-black flex justify-center items-center content-center">
+                    <img id="profile-picture" class="w-[70%]" src="./images/LuigiProfilePicture.webp" alt="Luigi Mario's Profile Picture">
+                </div>
+                <div id="name-title-container" class="h-auto flex-1 text-[3em] max-[600px]:text-[2.5em]">
+                    <!-- Luigi's actual last name is Mario, that's why they're the Mario Brothers -->
+                    <h1 id="profile-name" class="h-auto text-center text-[1em]">Luigi Mario</h1>
+                    <h2 id="profile-title" class="text-center h-auto text-[0.33em]">Okey dokey</h2>
+                </div>
+                <p id="profile-bio" class="w-auto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolorem nostrum numquam velit quae incidunt mollitia assumenda dolores ratione alias est veniam, quam nemo enim non laudantium eos fugiat blanditiis?</p>
+            </div>
+            <div id="buttons-container" class="flex justify-between">
+                <div>
+                    <a href="#"> <i class="fa-brands fa-twitter text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-facebook-square text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-github text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-instagram text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                </div>
+
+                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black" onclick="spinTime()"> Spin!!!! </button>
+            </div>
+        </div>
+
+        <div id="profile-card" class="bg-sky-300 p-[1em] rounded-2xl h-fit">
+            <div id="profile-name-picture-container" class="flex justify-center items-center content-center flex-wrap">
+                <div id="profile-picture-container" class="size-[6rem] rounded-full bg-white overflow-hidden border-3 border-black flex justify-center items-center content-center">
+                    <img id="profile-picture" class="w-[70%]" src="./images/LuigiProfilePicture.webp" alt="Luigi Mario's Profile Picture">
+                </div>
+                <div id="name-title-container" class="h-auto flex-1 text-[3em] max-[600px]:text-[2.5em]">
+                    <!-- Luigi's actual last name is Mario, that's why they're the Mario Brothers -->
+                    <h1 id="profile-name" class="h-auto text-center text-[1em]">Luigi Mario</h1>
+                    <h2 id="profile-title" class="text-center h-auto text-[0.33em]">Okey dokey</h2>
+                </div>
+                <p id="profile-bio" class="w-auto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolorem nostrum numquam velit quae incidunt mollitia assumenda dolores ratione alias est veniam, quam nemo enim non laudantium eos fugiat blanditiis?</p>
+            </div>
+            <div id="buttons-container" class="flex justify-between">
+                <div>
+                    <a href="#"> <i class="fa-brands fa-twitter text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-facebook-square text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-github text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-instagram text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
+                </div>
+
+                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black" onclick="spinTime()"> Spin!!!! </button>
+            </div>
         </div>
 
     </div>
 
-    <script>
-        function luigiNoises(){
+    <div id="darkmode-toggler" class="flex">
+        <button>
+            <i class="fa fa-moon-o text-[2em] hover:text-cyan-900 transition-colors"></i>
+            <h3>Dark Mode</h3>
+        </button>
+    </div>
 
+    <script>
+        function spinTime(){
+
+            //If not already spinning
+            if (!document.body.classList.contains("animate-spin")){
+
+                //Make everything spin
+                document.querySelectorAll("*").forEach(function(node){ 
+                    node.classList.toggle("animate-spin")
+                })
+
+                //Start timer to make everything stop spinning after 5 seconds
+                var intervalID = setTimeout(() => {
+                    document.querySelectorAll("*").forEach(function(node){ 
+                        node.classList.remove("animate-spin")
+                    })
+                }, 5000);
+            }
+            
         }
     </script>
     
