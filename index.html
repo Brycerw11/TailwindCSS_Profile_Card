@@ -11,22 +11,22 @@
     <!-- Link to use font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body>
-    <div id="card-container" class="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-4 items-center md:h-[100vh] min-h-[200px] p-[1em]">
+<body class="dark:bg-gray-700">
+    <div id="card-container" class="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-4 items-center md:h-[100vh] min-h-[200px] p-[1em] pb-[4rem] md:pb-[1em]">
 
-        <div id="profile-card" class="bg-sky-300 p-[1em] rounded-2xl h-fit">
+        <div id="profile-card" class="bg-sky-300 dark:bg-slate-800 p-[1em] rounded-2xl h-fit border-3 border-black dark:border-white dark:text-white">
             <div id="profile-name-picture-container" class="flex justify-center items-center content-center flex-wrap">
                 <div id="profile-picture-container" class="size-[6rem] rounded-full bg-white overflow-hidden border-3 border-black flex justify-center items-center content-center">
                     <img id="profile-picture" class="w-[70%]" src="./images/LuigiProfilePicture.webp" alt="Luigi Mario's Profile Picture">
                 </div>
                 <div id="name-titile-container" class="h-auto flex-1 text-[3em] max-[600px]:text-[2.5em]">
                     <!-- Luigi's actual last name is Mario, that's why they're the Mario Brothers -->
-                    <h1 id="profile-name" class="h-auto text-center text-[1em]">Luigi Mario</h1>
-                    <h2 id="profile-title" class="text-center h-auto text-[0.33em]">Okey dokey</h2>
+                    <h1 id="profile-name" class="h-auto text-center text-[1em] font-bold">Luigi Mario</h1>
+                    <h2 id="profile-title" class="text-center h-auto text-[0.33em] font-medium">Okey dokey</h2>
                 </div>
                 <p id="profile-bio" class="w-auto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolorem nostrum numquam velit quae incidunt mollitia assumenda dolores ratione alias est veniam, quam nemo enim non laudantium eos fugiat blanditiis?</p>
             </div>
-            <div id="buttons-container" class="flex justify-between">
+            <div id="buttons-container" class="flex justify-between pt-[0.5em]">
                 <div>
                     <a href="#"> <i class="fa-brands fa-twitter text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
                     <a href="#"> <i class="fa-brands fa-facebook-square text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
@@ -34,23 +34,23 @@
                     <a href="#"> <i class="fa-brands fa-instagram text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
                 </div>
 
-                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black" onclick="spinTime()"> Spin!!!! </button>
+                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black dark:border-white dark:bg-gray-700 dark:hover:bg-gray-600" onclick="spinTime()"> Spin!!!! </button>
             </div>
         </div>
 
-        <div id="profile-card" class="bg-sky-300 p-[1em] rounded-2xl h-fit">
+        <!-- All three profile cards have the same CSS -->
+        <div id="profile-card" class="bg-sky-300 dark:bg-slate-800 p-[1em] rounded-2xl h-fit border-3 border-black dark:border-white dark:text-white">
             <div id="profile-name-picture-container" class="flex justify-center items-center content-center flex-wrap">
                 <div id="profile-picture-container" class="size-[6rem] rounded-full bg-white overflow-hidden border-3 border-black flex justify-center items-center content-center">
-                    <img id="profile-picture" class="w-[70%]" src="./images/LuigiProfilePicture.webp" alt="Luigi Mario's Profile Picture">
+                    <img id="profile-picture" class="w-[60%]" src="./images/ToadProfilePicture.webp" alt="Toad's Profile Picture">
                 </div>
                 <div id="name-title-container" class="h-auto flex-1 text-[3em] max-[600px]:text-[2.5em]">
-                    <!-- Luigi's actual last name is Mario, that's why they're the Mario Brothers -->
-                    <h1 id="profile-name" class="h-auto text-center text-[1em]">Luigi Mario</h1>
-                    <h2 id="profile-title" class="text-center h-auto text-[0.33em]">Okey dokey</h2>
+                    <h1 id="profile-name" class="h-auto text-center text-[1em] font-bold">Generic Toad</h1>
+                    <h2 id="profile-title" class="text-center h-auto text-[0.33em] font-medium">Our princess is in another castle!</h2>
                 </div>
                 <p id="profile-bio" class="w-auto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolorem nostrum numquam velit quae incidunt mollitia assumenda dolores ratione alias est veniam, quam nemo enim non laudantium eos fugiat blanditiis?</p>
             </div>
-            <div id="buttons-container" class="flex justify-between">
+            <div id="buttons-container" class="flex justify-between pt-[0.5em]">
                 <div>
                     <a href="#"> <i class="fa-brands fa-twitter text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
                     <a href="#"> <i class="fa-brands fa-facebook-square text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
@@ -58,23 +58,22 @@
                     <a href="#"> <i class="fa-brands fa-instagram text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
                 </div>
 
-                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black" onclick="spinTime()"> Spin!!!! </button>
+                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black dark:border-white dark:bg-gray-700 dark:hover:bg-gray-600" onclick="spinTime()"> Spin!!!! </button>
             </div>
         </div>
 
-        <div id="profile-card" class="bg-sky-300 p-[1em] rounded-2xl h-fit">
+        <div id="profile-card" class="bg-sky-300 dark:bg-slate-800 p-[1em] rounded-2xl h-fit border-3 border-black dark:border-white dark:text-white">
             <div id="profile-name-picture-container" class="flex justify-center items-center content-center flex-wrap">
                 <div id="profile-picture-container" class="size-[6rem] rounded-full bg-white overflow-hidden border-3 border-black flex justify-center items-center content-center">
-                    <img id="profile-picture" class="w-[70%]" src="./images/LuigiProfilePicture.webp" alt="Luigi Mario's Profile Picture">
+                    <img id="profile-picture" class="w-[60%]" src="./images/YoshiProfilePicture.webp" alt="Yoshi's Profile Picture">
                 </div>
                 <div id="name-title-container" class="h-auto flex-1 text-[3em] max-[600px]:text-[2.5em]">
-                    <!-- Luigi's actual last name is Mario, that's why they're the Mario Brothers -->
-                    <h1 id="profile-name" class="h-auto text-center text-[1em]">Luigi Mario</h1>
-                    <h2 id="profile-title" class="text-center h-auto text-[0.33em]">Okey dokey</h2>
+                    <h1 id="profile-name" class="h-auto text-center text-[0.65em] font-bold">Yoshi</h1>
+                    <h2 id="profile-title" class="text-center h-auto text-[0.33em] font-medium">T. Yoshisaur Munchakoopas</h2>
                 </div>
                 <p id="profile-bio" class="w-auto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolorem nostrum numquam velit quae incidunt mollitia assumenda dolores ratione alias est veniam, quam nemo enim non laudantium eos fugiat blanditiis?</p>
             </div>
-            <div id="buttons-container" class="flex justify-between">
+            <div id="buttons-container" class="flex justify-between pt-[0.5em]">
                 <div>
                     <a href="#"> <i class="fa-brands fa-twitter text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
                     <a href="#"> <i class="fa-brands fa-facebook-square text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
@@ -82,22 +81,18 @@
                     <a href="#"> <i class="fa-brands fa-instagram text-[2em] hover:text-cyan-900 transition-colors"></i> </a>
                 </div>
 
-                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black" onclick="spinTime()"> Spin!!!! </button>
+                <button class="hover:bg-gray-300 transition-colors px-[0.5em] py-[0.35em] bg-gray-200 rounded-lg border-2 border-black dark:border-white dark:bg-gray-700 dark:hover:bg-gray-600" onclick="spinTime()"> Spin!!!! </button>
             </div>
         </div>
 
     </div>
 
-    <div id="darkmode-toggler" class="flex">
-        <button>
-            <i class="fa fa-moon-o text-[2em] hover:text-cyan-900 transition-colors"></i>
-            <h3>Dark Mode</h3>
-        </button>
+    <div id="light-dark-info-container" class="fixed bottom-0 w-[100%] p-[0.5rem] flex justify-center">
+        <p id="light-dark-mode-info" class="text-center dark:text-white bg-white/80 dark:bg-gray-700/80 p-[0.5rem] w-fit rounded-xl">You are currently viewing the light mode version of this page.</p>
     </div>
 
     <script>
         function spinTime(){
-
             //If not already spinning
             if (!document.body.classList.contains("animate-spin")){
 
@@ -113,8 +108,25 @@
                     })
                 }, 5000);
             }
-            
         }
+    </script>
+    <script>
+        function updateLightDarkModeInfo(){
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                // user has dark mode turned on
+                document.getElementById("light-dark-mode-info").innerHTML = "You are currently viewing the dark mode version of this page."
+            }
+            else{
+                document.getElementById("light-dark-mode-info").innerHTML = "You are currently viewing the light mode version of this page."
+            }
+        }
+
+        updateLightDarkModeInfo() //run on page load
+
+        // Watches for changes to prefered color scheme
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+            updateLightDarkModeInfo(); //updates color scheme info accordingly
+        });
     </script>
     
 </body>
